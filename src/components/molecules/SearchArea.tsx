@@ -1,9 +1,9 @@
 const SearchArea = () => {
   return (
-    <div className="flex items-center gap-x-2 py-2.5 pl-4 bg-[#f5f5f5] rounded-xl border-1 border-[#E4E4E4]">
+    <div className="flex grow items-center gap-x-2 py-2.5 pl-4 bg-[#f5f5f5] rounded-xl border-1 border-[#E4E4E4]">
       <img src="/src/assets/searchIcon.svg" alt="" />
       <input
-        className="outline-none w-[20rem]"
+        className="outline-none w-full"
         type="text"
         placeholder="Search listings, users here..."
       />

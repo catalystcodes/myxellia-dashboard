@@ -12,7 +12,7 @@ const OverviewSec = () => {
         <div className="flex grow  ">
           <SalesOverview />
         </div>
-        <div className="flex flex-col gap-y-5">
+        <div className="flex flex-col gap-y-13 ">
           {overviewData.map((data, index) => (
             <OverviewTemplate key={index} {...data} />
           ))}

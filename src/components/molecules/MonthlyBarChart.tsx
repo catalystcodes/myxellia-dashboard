@@ -31,7 +31,8 @@ export default function MonthlyBarChart() {
             left: 30,
             bottom: 20,
           }}
-          barCategoryGap="15%"
+          barCategoryGap="20%"
+          barGap="3"
         >
           <CartesianGrid strokeDasharray="3 3" stroke="" />
           <XAxis
@@ -41,16 +42,16 @@ export default function MonthlyBarChart() {
             tick={{ fontSize: 10, fill: "#666" }}
           />
           <YAxis
-            axisLine={false}
+            axisLine={{ stroke: "#666" }}
             tickLine={false}
             tick={{ fontSize: 10, fill: "#666" }}
             domain={[0, 50]}
             ticks={[0, 10, 20, 30, 40, 50]}
             tickFormatter={(value) => `${value}m`}
           />
-          <Bar dataKey="blue" fill="#4545FE" maxBarSize={20} />
-          <Bar dataKey="green" fill="#12B76A" maxBarSize={20} />
-          <Bar dataKey="red" fill="#F04438" maxBarSize={20} />
+          <Bar dataKey="blue" fill="#4545FE" maxBarSize={5} />
+          <Bar dataKey="green" fill="#12B76A" maxBarSize={5} />
+          <Bar dataKey="red" fill="#F04438" maxBarSize={5} />
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -4,8 +4,21 @@ import HeaderCard from "../molecules/HeaderCard";
 import SearchArea from "../molecules/SearchArea";
 import BudgetModal from "../molecules/BudgetModal";
 
-const Navbar = () => {
+interface NavbarProps {
+  onCalendarClick: () => void;
+  btnRef?: React.RefObject<HTMLImageElement>;
+}
+
+const Navbar = ({ onCalendarClick, btnRef }: NavbarProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleClick = (label: (typeof navIcon)[number]["label"]) => {
+    if (label == "Budget") {
+      handleModalOpen();
+    } else if (label === "Calendar") {
+      onCalendarClick();
+    }
+    return;
+  };
   const handleModalOpen = () => {
     setIsModalOpen(true);
   };
@@ -24,11 +37,13 @@ const Navbar = () => {
               src={icon.icon}
               alt={icon.label}
               className=" cursor-pointer"
+              onClick={() => handleClick(icon.label)}
+              ref={index === 2 ? btnRef : null}
             />
           ))}
         </div>
       </div>
-      <div className="my-3.5 flex items-center justify-between px-[4.875rem]">
+      <div className="my-3.5 flex items-center gap-x-7.5 px-[4.875rem]">
         <div className="flex items-center gap-x-5 ">
           {headerData.map((data, index) => (
             <HeaderCard {...data} key={index} />
@@ -37,7 +52,6 @@ const Navbar = () => {
         <SearchArea />
       </div>
       <div>
-        <button onClick={handleModalOpen}>Open Modal</button>
         <div>
           <BudgetModal isOpen={isModalOpen} onRequestClose={handleModalClose} />
         </div>

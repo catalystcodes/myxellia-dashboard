@@ -19,13 +19,13 @@ export const navIcon = [
     icon: "/Avatar.png",
     label: "Profile",
   },
-];
+] as const;
 
 export const headerData = [
   {
     icon: "/src/assets/homeIcon.svg",
     label: "Dashboard",
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "",
   },
   {
     icon: "/src/assets/listingIcon.svg",

@@ -17,8 +17,8 @@ const OverviewTemplate: React.FC<OverviewTemplateProps> = ({
   additionalItems = [],
 }) => {
   return (
-    <div className="rounded-2xl border-1 border-[#E4E4E4]  w-[25.4375rem] ">
-      <div className="bg-[#F9FAFB] flex p-4 justify-between rounded-tl-2xl rounded-tr-2xl">
+    <div className="rounded-2xl border-1 border-[#E4E4E4]  w-[25.4375rem] h-[10.5rem]">
+      <div className="bg-[#F9FAFB] flex p-5 justify-between rounded-tl-2xl rounded-tr-2xl">
         <span className="flex items-center gap-x-2.5">
           <img src={iconSrc} alt="" />
           <h2 className="text-[#292929] text-[0.875rem] font-medium">
