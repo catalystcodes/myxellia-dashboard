@@ -29,7 +29,7 @@ const Navbar = ({ onCalendarClick, btnRef }: NavbarProps) => {
   return (
     <div className="border-b-1 border-[#f4f4f5]">
       <div className="bg-[#191919] flex justify-between px-[4.875rem]">
-        <img src="/src/assets/Myxellia logo.svg" alt="logo" />
+        <img src="/Myxellia logo.svg" alt="logo" />
         <div className="flex items-center gap-x-6 py-5">
           {navIcon.map((icon, index) => (
             <img

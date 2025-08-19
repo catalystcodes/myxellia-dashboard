@@ -1,18 +1,18 @@
 export const navIcon = [
   {
-    icon: "/src/assets/notificationicon.svg",
+    icon: "/notificationicon.svg",
     label: "Notifications",
   },
   {
-    icon: "/src/assets/budgeticon.svg",
+    icon: "/budgeticon.svg",
     label: "Budget",
   },
   {
-    icon: "/src/assets/calendaricon.svg",
+    icon: "/calendaricon.svg",
     label: "Calendar",
   },
   {
-    icon: "/src/assets/messageIcon.svg",
+    icon: "/messageIcon.svg",
     label: "Messages",
   },
   {
@@ -23,27 +23,27 @@ export const navIcon = [
 
 export const headerData = [
   {
-    icon: "/src/assets/homeIcon.svg",
+    icon: "/homeIcon.svg",
     label: "Dashboard",
     backgroundColor: "",
   },
   {
-    icon: "/src/assets/listingIcon.svg",
+    icon: "/listingIcon.svg",
     label: "Listings",
     backgroundColor: "",
   },
   {
-    icon: "/src/assets/userIcon.svg",
+    icon: "/userIcon.svg",
     label: "Users",
     backgroundColor: "",
   },
   {
-    icon: "/src/assets/requestIcon.svg",
+    icon: "/requestIcon.svg",
     label: "Request",
     backgroundColor: "",
   },
   {
-    icon: "/src/assets/applicationIcon.svg",
+    icon: "/applicationIcon.svg",
     label: "Applications",
     backgroundColor: "",
   },
@@ -52,7 +52,7 @@ export const headerData = [
 export const overviewData = [
   {
     title: "Listings Overview",
-    iconSrc: "/src/assets/solar_home-linear.svg",
+    iconSrc: "/solar_home-linear.svg",
     totalValue: "1.8k",
     additionalItems: [
       { label: "Active", value: "80" },
@@ -61,7 +61,7 @@ export const overviewData = [
   },
   {
     title: "Users Overview",
-    iconSrc: "/src/assets/profile.svg",
+    iconSrc: "/profile.svg",
     totalValue: "25.4k",
     additionalItems: [
       { label: "Riders", value: "8.5k" },
@@ -73,7 +73,7 @@ export const overviewData = [
 export const salesOverviewData = [
   {
     percentage: 2.5,
-    icon: "/src/assets/tfIcon.svg",
+    icon: "/tfIcon.svg",
     number: "₦120,000,000.00",
     text: "Total Inflow",
     numberColor: "#4545FE",
@@ -81,7 +81,7 @@ export const salesOverviewData = [
   },
   {
     percentage: 2.5,
-    icon: "/src/assets/mrrIcon.svg",
+    icon: "/mrrIcon.svg",
     number: "₦50,000,000.00",
     text: "MRR",
     numberColor: "#12B76A",
@@ -89,7 +89,7 @@ export const salesOverviewData = [
   },
   {
     percentage: 0.5,
-    icon: "/src/assets/crIcon.svg",
+    icon: "/crIcon.svg",
     number: "₦200,000,000.00",
     text: "Commission Revenue",
     numberColor: "#14B8A6",
@@ -97,7 +97,7 @@ export const salesOverviewData = [
   },
   {
     percentage: 0.5,
-    icon: "/src/assets/gmvIcon.svg",
+    icon: "/gmvIcon.svg",
     number: "₦100,000,000.00",
     text: "GMV",
     numberColor: "#F04438",
@@ -109,19 +109,19 @@ export const footerData = [
   {
     title: "MOST CLICKED",
     text: "Urban Prime Plaza Premiere",
-    progression: "/src/assets/progression1.svg",
+    progression: "/progression1.svg",
     backgroundImg: "/MetricItem1.png",
   },
   {
     title: "MOST WATCHLISTED",
     text: "Urban Prime Plaza Premiere",
-    progression: "/src/assets/progression2.svg",
+    progression: "/progression2.svg",
     backgroundImg: "/MetricItem2.png",
   },
   {
     title: "HOTTEST LISTING",
     text: "Urban Prime Plaza Premiere",
-    progression: "/src/assets/progression3.svg",
+    progression: "/progression3.svg",
     backgroundImg: "/MetricItem3.png",
   },
 ];
@@ -130,16 +130,16 @@ export const modalContent = [
   {
     title: "Set up annual budgets by account category",
     desc: "Allocate funds across income and expense lines with full visibility.",
-    icon: "/src/assets/setting-4.svg",
+    icon: "/setting-4.svg",
   },
   {
     title: "Track actuals vs budget in real time",
     desc: "See how your community is performing against plan, month by month.",
-    icon: "/src/assets/trend-up.svg",
+    icon: "/trend-up.svg",
   },
   {
     title: "Adjust figures and forecast with ease",
     desc: "Edit amounts, apply percentage changes, or roll forward last year’s data—all in one place.",
-    icon: "/src/assets/modalIcon3.svg",
+    icon: "/modalIcon3.svg",
   },
 ];

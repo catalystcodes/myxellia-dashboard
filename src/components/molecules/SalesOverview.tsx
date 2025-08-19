@@ -29,9 +29,9 @@ const SalesOverview = () => {
       </div>
       <div className="flex items-center h-full ">
         <div className="w-[63%] pt-4 flex  px-2.5 ">
-          <img src="/src/assets/leftIcon.svg" alt="" />
+          <img src="/leftIcon.svg" alt="" />
           <MonthlyBarChart />
-          <img src="/src/assets/rightIcon.svg" alt="" />
+          <img src="/rightIcon.svg" alt="" />
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-5 w-[37%]">
           {salesOverviewData.map((item, index) => (

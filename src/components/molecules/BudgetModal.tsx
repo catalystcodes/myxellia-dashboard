@@ -46,7 +46,7 @@ const BudgetModal: React.FC<BudgetModalProps> = ({
           justifyContent: "center",
         }}
       >
-        <img src="/src/assets/calculator.svg" alt="" />
+        <img src="/calculator.svg" alt="" />
       </div>
       <div className="flex flex-col gap-y-6 px-12 py-6">
         {modalContent.map((item, index) => (
