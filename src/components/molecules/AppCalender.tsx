@@ -22,7 +22,9 @@ const AppCalender = ({ close }: AppCalenderProps) => {
         prev2Label={null}
         showFixedNumberOfWeeks={true}
         tileClassName={({ date, view }: { date: Date; view: string }) =>
-          view === "month" && date.getDate() === new Date().getDate()
+          view === "month" &&
+          date.getDate() === new Date().getDate() &&
+          date.getMonth() === new Date().getMonth()
             ? " tiles"
             : date.getDate() > -1
             ? "flex grow  h-[6rem] w-[3.125rem] border-[0.47px] border-[#242424] pt-[0.3rem] pl-[0.3rem]  font-medium  text-[0.625rem]"
@@ -31,7 +33,9 @@ const AppCalender = ({ close }: AppCalenderProps) => {
             : null
         }
         tileContent={({ date, view }) =>
-          view === "month" && date.getDate() === new Date().getDate() ? (
+          view === "month" &&
+          date.getDate() === new Date().getDate() &&
+          date.getMonth() === new Date().getMonth() ? (
             <p className="text-white py-[2px] px-[8px] bg-[#2525E6] rounded-[10px] ">
               {new Date().getDate()}
             </p>
